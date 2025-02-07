@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>roghaye</title>
+    </head>
+    <body>
+        <center>
+            <table width="60%">
+                {%for item in books%}
+                <tr>
+                    <td width="33%">
+                        <div style="margin:0px 20px">
+                            <img height="200px" width="100%" src="https://images.app.goo.gl/2iVuEnTuumntFKSb7">
+                            <pa>{{item.id}}</pa>
+                            <pa>{{item.name}}</pa>
+                         </div> 
+                        </tr>
+                    </tr>
+                    {%endif%}
+                {%endfor%}  
+            </table>
+        </center>
+    </body>
+</html>
