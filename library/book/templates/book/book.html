@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
     <head>
-        <title>roghaye</title>
+        <title>{%block title%}pish farz{% endblock %}</title>
     </head>
-    <body>
-        <center>
-            <table width="60%">
-                {%for item in books%}
-                <tr>
-                    <td width="33%">
-                        <div style="margin:0px 20px">
-                            <img height="200px" width="100%" src="https://images.app.goo.gl/2iVuEnTuumntFKSb7">
-                            <pa>{{item.id}}</pa>
-                            <pa>{{item.name}}</pa>
-                         </div> 
-                        </tr>
-                    </tr>
-                    {%endif%}
-                {%endfor%}  
-            </table>
-        </center>
+    <body style="margin;0px">
+        {%block content%}pish farz{% endblock %}
     </body>
 </html>
+<style>
+    .navbar{
+        background-color:#eee;
+        padding:15px;
+        box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+        margin-bottom:10px;
+    }
+</style>

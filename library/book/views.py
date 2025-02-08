@@ -18,7 +18,7 @@ def library(request):
 
 def book_list(request):
     context={"books":bookk}
-    return render(request,'book.html', context=context)
+    return render(request,'book/book.html', context=context)
  
 def detail(request, id):
     return HttpResponse(f"book list: {id}")
