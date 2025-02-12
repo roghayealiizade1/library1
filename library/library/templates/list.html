@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block title %}
+جزئیات
+{% endblock %}
+
+{% block content %}
+<center>
+    <table width="50%">
+        {% for item in bookk %}
+            {% if forloop.counter0|divisibleby:"3" %}
+                <tr>
+            {% endif %}
+                <td  width="30%">
+                    {% include 'music/components/book_list_box.html' with book=item %}
+                </td>
+            {% if forloop.counter|divisibleby:"3" %}
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+</center>
+{% endblock %}
+
+
